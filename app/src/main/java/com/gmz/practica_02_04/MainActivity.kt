@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         val viewPendingIntent = Intent(this, DetailActivity2::class.java)
             .let { viewIntent ->
-                viewIntent.putExtra("detalle","Detalle de la notificación")
+                viewIntent.putExtra("Detalle","Detalle de la notificación")
                 PendingIntent.getActivity(this, 0, viewIntent,0)
             }
 
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         val notificationBuilder = NotificationCompat.Builder( this, channelId)
             .setSmallIcon(android.R.drawable.ic_dialog_info)
-            .setContentTitle("Practica 04")
+            .setContentTitle("Nitificación")
             .setContentText("Contenido de la notificación")
             .setContentIntent(viewPendingIntent)
 
