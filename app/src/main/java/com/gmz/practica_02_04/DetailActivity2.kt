@@ -14,6 +14,6 @@ class DetailActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_detail2)
 
         val extras = intent.extras?: return
-        tvDetail.setText(extras.getString("detalle"))
+        tvDetail.setText(extras.getString("Detalles"))
     }
 }
